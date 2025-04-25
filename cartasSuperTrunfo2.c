@@ -15,9 +15,9 @@ int main() {
         char estado2[3] = "B";
         char c_carta2[4] = "B02"; //a letra do estado seguida de um número de 01 a 04
         char n_cidade2[20] = "Barcarena";
-        int populacao2 = 25000;
-        float area2 = 28000; // Em quilômetros quadrados
-        float PIB2 = 15000000;
+        int populacao2 = 35000;
+        float area2 = 30000; // Em quilômetros quadrados
+        float PIB2 = 20000000;
         int npt2 = 8;
         float dpop2 = (float) populacao2/area2; //para densidade populacional
         float pibpc2 = (float) PIB2/populacao2; //para pib per capita
@@ -32,13 +32,13 @@ int main() {
     scanf("%s", n_cidade); // Para nomes sem espaços. Se precisar de espaços, use fgets.
 
     printf("Para a carta 1: \n digite o numero da populacao da cidade: \n");
-    scanf("%d", &populacao); // Lê um inteiro para a população
+    scanf("%f", &populacao); // Lê um inteiro para a população
 
     printf("Para a carta 1: \n digite a area em quilometros quadrados da cidade: \n");
-    scanf("%2f", &area);   // Lê um float para a área
+    scanf("%f", &area);   // Lê um float para a área
 
     printf("Para a carta 1: \n digite PIB da cidade: \n");
-    scanf("%2f", &PIB);    // Lê um float para o PIB
+    scanf("%f", &PIB);    // Lê um float para o PIB
 
     printf("Para a carta 1: \n digite o numero de pontos turisticos da cidade: \n");
     scanf("%d", &npt);    // Lê um inteiro para o número de pontos turísticos
@@ -54,28 +54,28 @@ int main() {
         scanf("%s", n_cidade2);
 
         printf("Para a carta 2: \n digite o numero da populacao da cidade: \n");
-        scanf("%d", &populacao2); // Lê um inteiro para a população
+        scanf("%f", &populacao2); // Lê um inteiro para a população
 
         printf("Para a carta 2: \n digite a area em quilometros quadrados da cidade: \n");
-        scanf("%2f", &area2);   // Lê um float para a área
+        scanf("%f", &area2);   // Lê um float para a área
 
         printf("Para a carta 2: \n digite PIB da cidade: \n");
-        scanf("%2f", &PIB2);     // Lê um float para o PIB
+        scanf("%f", &PIB2);     // Lê um float para o PIB
 
         printf("Para a carta 2: \n digite o numero de pontos turisticos da cidade: \n");
         scanf("%d", &npt2);   // Lê um inteiro para o número de pontos turísticos
 
     printf("carta 1: \no estado é: %s \no código da carta: %s\n", estado, c_carta);
     printf("o nome da cidade é: %s \na populacao é: %d\n", n_cidade, populacao);
-    printf("a area é: %2f \no PIB é: %2f\no numero de pontos turisticos é: %d \n\n", area, PIB, npt);
-    printf("a densidade populacional é: %2f \n", dpop);
-    printf("o PIB per Capita é: %2f \n", pibpc);
+    printf("a area é: %.2f \no PIB é: %.2f\no numero de pontos turisticos é: %d \n\n", area, PIB, npt);
+    printf("a densidade populacional é: %.2f \n", dpop);
+    printf("o PIB per Capita é: %.2f \n", pibpc);
 
         printf("carta 2: \no estado é: %s \no código da carta: %s\n", estado2, c_carta2);
         printf("o nome da cidade é: %s \na populacao é: %d\n", n_cidade2, populacao2);
-        printf("a area é: %2f \no PIB é: %2f\no numero de pontos turisticos é: %d \n", area2, PIB2, npt2);
-        printf("a densidade populacional é: %2f \n", dpop2);
-        printf("o PIB per Capita é: %2f \n", pibpc2);
+        printf("a area é: %.2f \no PIB é: %.2f\no numero de pontos turisticos é: %d \n", area2, PIB2, npt2);
+        printf("a densidade populacional é: %.2f \n", dpop2);
+        printf("o PIB per Capita é: %.2f \n", pibpc2);
 
     return 0;
 }
